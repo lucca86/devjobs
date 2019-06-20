@@ -1,0 +1,45 @@
+{
+  "name": "devjobs",
+  "version": "1.0.0",
+  "description": "Portal DevJobs con NodeJS, Handlebars y Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index",
+    "desarrollo": "concurrently \"npm run dev\" \"npm run watch \" ",
+    "start": "node ./index.js",
+    "watch": "webpack --w --mode development"
+  },
+  "author": "Lucca WebDev",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.6",
+    "concurrently": "^4.1.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.3",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.16.1",
+    "express-validator": "^5.3.1",
+    "http-errors": "^1.7.2",
+    "mongoose": "^5.5.13",
+    "multer": "^1.4.1",
+    "nodemailer": "^6.2.1",
+    "nodemailer-express-handlebars": "^3.0.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "shortid": "^2.2.14",
+    "slug": "^1.1.0",
+    "sweetalert2": "^8.12.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "nodemon": "^1.19.1",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.3"
+  }
+}
